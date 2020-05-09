@@ -41,13 +41,14 @@ with open(file_recoveries) as f_r:
 
 # Plot data.
 fig = plt.figure(dpi=128, figsize=(10,6))
-plt.plot(dates, deaths, c='red')
-plt.plot(dates, recover, c='blue')
+plt.plot(dates, deaths, c='red', label="Deaths")
+plt.plot(dates, recover, c='blue', label="Recoveries")
 
 # Format plot.
 plt.title("Covid Deaths in US", fontsize=24)
 plt.xlabel("Date", fontsize=16)
 plt.ylabel("Deaths", fontsize=16)
 plt.tick_params(axis="both", which="major", labelsize=8)
+plt.legend()
 
 plt.show()
