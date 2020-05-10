@@ -51,4 +51,5 @@ plt.ylabel("Deaths", fontsize=16)
 plt.tick_params(axis="both", which="major", labelsize=8)
 plt.legend()
 
-plt.show()
+plt.savefig('covid_d_r.png')
+# plt.show()
