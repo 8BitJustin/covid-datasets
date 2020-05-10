@@ -45,7 +45,7 @@ plt.plot(dates, deaths, c='red', label="Deaths")
 plt.plot(dates, recover, c='blue', label="Recoveries")
 
 # Format plot.
-plt.title("Covid Deaths in US", fontsize=24)
+plt.title("Covid Deaths and Recoveries in US", fontsize=20)
 plt.xlabel("Date", fontsize=16)
 plt.ylabel("Deaths", fontsize=16)
 plt.tick_params(axis="both", which="major", labelsize=8)
